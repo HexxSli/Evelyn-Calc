@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .glass-pearl-card {
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 
+      0 20px 40px -10px rgba(180, 130, 138, 0.05),
+      inset 0 1px 0 rgba(255, 255, 255, 1);
+  }
+
+  .glass-pearl-button {
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    box-shadow: 
+      0 8px 20px -4px rgba(180, 130, 138, 0.06),
+      inset 0 2px 4px rgba(255, 255, 255, 0.8);
+  }
+
+  .glass-pearl-fn-button {
+    background: rgba(250, 240, 240, 0.65);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    box-shadow: 
+      0 8px 20px -4px rgba(180, 130, 138, 0.06),
+      inset 0 2px 4px rgba(255, 255, 255, 0.8);
+  }
+
+  .glass-rose-gold-operator {
+    background: linear-gradient(135deg, #dfafb9 0%, #c58c9b 100%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 
+      0 10px 25px -5px rgba(197, 140, 155, 0.4),
+      inset 0 2px 4px rgba(255, 255, 255, 0.4);
+  }
+
+  .glass-rose-gold-active {
+    background: linear-gradient(135deg, #c58c9b 0%, #ab7583 100%);
+    box-shadow: 
+      inset 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: activeOperatorPulse 1.5s infinite alternate ease-in-out;
+  }
+
+  @keyframes activeOperatorPulse {
+    0% { filter: brightness(1); }
+    100% { filter: brightness(1.15); box-shadow: 0 0 15px rgba(197, 140, 155, 0.4), inset 0 4px 8px rgba(0, 0, 0, 0.1); }
+  }
+  .glass-sci-button {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0 4px 12px rgba(180, 130, 138, 0.04);
+  }
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fcf8f6;
+  font-family: 'Poppins', 'Montserrat', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+

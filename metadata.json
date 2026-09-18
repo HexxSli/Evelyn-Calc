@@ -1,0 +1,7 @@
+{
+  "name": "Evelyn Calculator",
+  "description": "An elegant, feminine, mobile-first calculator with frosted pearl glassmorphism, rose gold and dusty rose accents, and refined typography.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
